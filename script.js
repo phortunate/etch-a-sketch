@@ -32,7 +32,6 @@ function addNodes(nodes) {
     allNodes.forEach(node => node.addEventListener("mouseover", changeColor));
 }
 
-addNodes(50);
 
 function changeColor() {
     let randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
@@ -49,3 +48,4 @@ function clearNodes() {
     const allNodes = Array.from(document.querySelectorAll(".node"));
     allNodes.forEach(node => node.remove());
 }
+addNodes(10);
